@@ -1,10 +1,14 @@
 package characters;
 
+import treasure.Treasure;
+
+import java.util.ArrayList;
+
 public abstract class Player {
 
     private String name;
     private int health;
-//    private ArrayList<Treasure> treasureSack;
+    private ArrayList<Treasure> treasureSack;
 
 
     public Player(String name) {
