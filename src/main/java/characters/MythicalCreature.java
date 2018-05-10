@@ -2,11 +2,11 @@ package characters;
 
 import behaviours.TakeDamage;
 
-public abstract class MythicalCreatures implements TakeDamage {
+public abstract class MythicalCreature implements TakeDamage {
 
     private int healthRating;
 
-    public MythicalCreatures(int healthRating) {
+    public MythicalCreature(int healthRating) {
         this.healthRating = healthRating;
     }
 

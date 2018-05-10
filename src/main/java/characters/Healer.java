@@ -1,8 +1,17 @@
 package characters;
 
-public class Healer extends Player {
+import healingTools.HealingTool;
 
-    public Healer(String name) {
+public abstract class Healer extends Player {
+
+    private HealingTool healingTool;
+
+    public Healer(String name, HealingTool healingTool) {
         super(name);
+        this.healingTool = healingTool;
+    }
+
+    public int heal(){
+        return this.healingTool.getHealingRating();
     }
 }
